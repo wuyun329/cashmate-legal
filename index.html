@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CashMate 记账 隐私政策</title>
+<meta name="description" content="CashMate 记账是一款完全离线的本机记账工具，不收集任何个人信息。" />
+<style>
+  :root {
+    --bg: #F7F7F7;
+    --surface: #FFFFFF;
+    --text: #111111;
+    --muted: #6B6B6B;
+    --border: #EAEAEA;
+    --brand: #1A5C4E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E0F0E;
+      --surface: #1A1C1B;
+      --text: #F2F3F2;
+      --muted: #A1A1A1;
+      --border: #2A2C2B;
+      --brand: #6FC3AC;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px 32px 40px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: var(--brand);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .intro {
+    margin: 0 0 8px;
+    padding: 16px 18px;
+    background: var(--bg);
+    border-radius: 12px;
+    color: var(--muted);
+  }
+  h2 {
+    margin: 32px 0 10px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  p { margin: 0 0 10px; }
+  hr {
+    margin: 40px 0 24px;
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  a { color: var(--brand); }
+  .nav {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  @media (max-width: 420px) {
+    body { padding: 28px 12px 48px; }
+    main { padding: 24px 18px 28px; border-radius: 12px; }
+    h1 { font-size: 24px; }
+  }
+  footer {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">CashMate 记账</div>
+  <h1>隐私政策</h1>
+  <p class="meta">更新日期：2026 年 11 月 20 日　·　生效日期：2026 年 11 月 20 日</p>
+  <p class="meta">开发者：吴赟（Wu Yun）</p>
+
+  <p class="intro">CashMate 记账是一款完全离线的本机记账工具。这份政策用直白的语言说明：我们不收集任何个人信息，你的账目只留在你自己的设备上。</p>
+
+  <h2>一、我们收集哪些信息</h2>
+  <p>不收集。本应用没有注册与登录，没有账号体系，不会采集姓名、手机号、邮箱、身份证件等身份信息。</p>
+  <p>也不会采集设备标识符、地理位置、通讯录、相册、剪贴板、输入法等任何系统数据；应用内不存在埋点、崩溃上报与使用统计代码。</p>
+
+  <h2>二、你的记账数据存在哪里</h2>
+  <p>你在应用内录入的全部内容——包括每笔账目的金额、分类、备注、日期，以及资金账户、自定义分类、预算设置、周期记账规则与外观偏好——都写入当前设备的本机存储。</p>
+  <p>这些数据不会离开设备，不会上传到任何服务器或云端，开发者也无法读取。</p>
+
+  <h2>三、网络与第三方 SDK</h2>
+  <p>应用内不含任何网络请求代码（不使用 fetch、XMLHttpRequest、WebSocket 等），在飞行模式下功能与联网时完全一致。</p>
+  <p>应用未接入广告、统计、推送或崩溃收集类第三方 SDK。项目依赖的第三方库仅用于界面渲染、图标字体与本地文件读写，均不上报数据。</p>
+
+  <h2>四、你对自己数据的控制权</h2>
+  <p>导出数据（CSV）、导出备份（JSON）、从备份恢复（JSON）三项能力全部由你主动点击触发，应用不会自行上传或同步。</p>
+  <p>导出时文件先写入本机缓存目录，再由系统分享面板交给你决定保存位置或分享给谁；恢复时由系统文件选择器读取你指定的备份文件。</p>
+  <p>设置页的「清空全部数据」会删除本机全部账目记录，此操作不可撤销，执行前建议先导出备份。</p>
+  <p>卸载应用会一并清除本机保存的数据。请在卸载或更换设备前自行导出备份，我们无法代为找回。</p>
+
+  <h2>五、权限说明</h2>
+  <p>本应用不申请定位、通讯录、短信、麦克风等权限，也不读取剪贴板与输入法内容。</p>
+  <p>给账目添加票据照片时，会申请相机权限（用于拍摄）或相册权限（用于选取已有照片），仅读取你当场选中的那一张照片并存到本机账目，不会扫描或上传其他照片。</p>
+  <p>启用账本锁时，会使用系统提供的生物识别（指纹 / 面容）能力完成解锁校验，指纹与面容数据由系统安全模块保管，应用无法读取。</p>
+  <p>导出、备份与恢复通过系统分享面板与文件选择器完成，这些交互由你在系统界面中自行确认。</p>
+
+  <h2>六、未成年人保护</h2>
+  <p>由于应用不收集任何个人信息，也就不存在对未成年人个人信息的收集与处理。未成年人可在监护人指导下使用本应用。</p>
+
+  <h2>七、政策更新与联系</h2>
+  <p>若后续版本新增联网或统计能力，我们会在发布前更新本政策，并在应用内提示你查看。</p>
+  <p>对本政策有疑问，可邮件至 wuyun329@agent.qq.com 反馈。</p>
+
+  <hr />
+  <footer>
+    CashMate 记账 · 全部数据留在你的设备上
+    <div class="nav"><a href="support.html">支持与联系</a></div>
+  </footer>
+</main>
+</body>
+</html>
